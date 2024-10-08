@@ -553,3 +553,7 @@ video {
 [hidden] {
   display: none;
 }
+
+.font-bold {
+  font-weight: 700;
+}
