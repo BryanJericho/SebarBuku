@@ -5,9 +5,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>AA</h1>
-    <h1 class="font-bold">aaaa</h1>
+  <body style="height: 2000px" class="font-inter">
+    <header
+      class="container bg-primary max-w-full flex items-center py-6 px-5 justify-between top-0 fixed md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter z-20"
+    >
+      <div class="logo flex items-center gap-3">
+        <img src="./img/Logo.svg" alt="" class="w-[35px]" />
+        <span class="font-bold text-lg text-white">SebarBuku</span>
+      </div>
+
+      <div
+        class="w-11 h-11 bg-purple rounded-xl flex items-center justify-center flex-col min-w-3 lg:hidden"
+      >
+        <span class="hamburger-line block w-6 h-1 bg-white mb-1"></span>
+        <span class="hamburger-line block w-6 h-1 bg-white mb-1"></span>
+        <span class="hamburger-line block w-6 h-1 bg-white"></span>
+      </div>
+      <nav
+        class="hidden lg:flex items-center justify-center text-white font-inter text-md font-bold"
+      >
+        <ul class="flex gap-10">
+          <li>
+            <a href="#" class="hover:text-indigo-400 whitespace-nowrap"
+              >About Us</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-indigo-400">Contact</a></li>
+          <li><a href="#" class="hover:text-indigo-400">Content</a></li>
+          <li><a href="#" class="hover:text-indigo-400">Member</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- home start -->
+    <div
+      class="relative mt-[100px] container max-w-full items-center py-6 px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <img src="./img/container-img.svg" alt="" />
+      <div class="text mt-8">
+        <h1 class="text-primary font-semibold text-2xl mb-1">SebarBuku</h1>
+        <h1 class="text-secondary font-bold text-5xl mb-1">Sebar Impian</h1>
+        <p class="mb-2">Donasi Buku untuk Anak Indonesia</p>
+        <div class="bg-primary px-4 py-3 inline-block rounded-lg">
+          <span class="text-white">Coba sekarang</span>
+        </div>
+      </div>
+    </div>
+    <!-- Home end -->
+
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Kenapa Pilih <span class="text-[#B9A271]">SebarBuku?</span>
+      </h1>
+      <img
+        src="./img/kenapa-pilih-sebar-buku.png"
+        alt=""
+        class="rounded-tl-3xl rounded-br-3xl mb-4"
+      />
+      <div class="text">
+        <div class="flex items-center gap-4 text-primary mb-4">
+          <img src="./img/praktis-vector.svg" alt="" class="w-[40px]" />
+          <div class="flex flex-col gap-0">
+            <p class="font-semibold text-base">Proses Donasi Praktis</p>
+            <p>
+              Sebar Buku menawarkan proses donasi buku yang cepat dan mudah
+              dengan hanya beberapa klik.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 text-primary mb-4">
+          <img src="./img/dampak-nyata-vektor.svg" alt="" class="w-[40px]" />
+          <div class="flex flex-col gap-0">
+            <p class="font-semibold text-base">Dampak Nyata</p>
+            <p>
+              Sebar Buku memastikan buku donasi sampai ke tangan yang
+              membutuhkan, menciptakan dampak nyata bagi pendidikan.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 text-primary">
+          <img src="./img/trnasparansi-vector.svg" alt="" class="w-[40px]" />
+          <div class="flex flex-col gap-0">
+            <p class="font-semibold text-base">Transparansi</p>
+            <p>
+              Sebar Buku memberikan transparansi penuh, memungkinkan donatur
+              melacak perjalanan donasi mereka..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Tentang <span class="text-[#B9A271]">SebarBuku?</span>
+      </h1>
+
+      <!-- Menghilangkan pengaruh padding dengan margin negatif -->
+      <div class="bg-[#EAD8B1] px-4 py-4 -mx-5 md:-mx-12 lg:-mx-16 mb-4">
+        <img src="./img/tentang.png" alt="" class="w-full h-auto" />
+      </div>
+
+      <div class="text">
+        <p>
+          Sebar Buku adalah platform digital yang memfasilitasi donasi buku
+          antara individu dan institusi yang membutuhkan. Dengan tujuan
+          meningkatkan akses literasi dan pendidikan, Sebar Buku menghubungkan
+          para donatur dengan sekolah, perpustakaan, serta lembaga sosial yang
+          kekurangan buku bacaan. Melalui proses yang sederhana dan transparan,
+          Sebar Buku memastikan bahwa setiap buku yang didonasikan dapat membawa
+          manfaat besar bagi mereka yang membutuhkan, sembari membangun semangat
+          berbagi dan peduli di masyarakat.
+        </p>
+
+        <div class="bg-primary px-7 py-3 inline-block rounded-lg">
+          <span class="text-white">Lihat</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeri start -->
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Galeri <span class="text-[#B9A271]">SebarBuku</span>
+      </h1>
+    </div>
+    <!-- Galeri End -->
+
+    <!-- Apa yang mereka katakan -->
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Apa yang <span class="text-[#B9A271]">Mereka Katakan?</span>
+      </h1>
+      <div class="flex flex-col gap-5">
+        <div
+          class="bg-secondary w-full h-[350px] flex flex-col items-center justify-center text-white px-5 py-3 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp1.png"
+              alt=""
+              class="w-20 h-20 rounded-full"
+            />
+          </div>
+          <p class="text-xl font-semibold">Olivia</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Bina Ilmu</p>
+          <p class="text-center text-sm">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus tempora alias velit laboriosam, blanditiis, aliquid
+            voluptates consequatur tenetur dolorum, natus fugiat error
+            cupiditate! Porro nihil tempore reprehenderit, sint itaque quisquam"
+          </p>
+        </div>
+
+        <div
+          class="bg-primary w-full h-[350px] flex flex-col items-center justify-center text-white px-5 py-3 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp2.png"
+              alt=""
+              class="w-20 h-20 rounded-full"
+            />
+          </div>
+          <p class="text-xl font-semibold">James</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Bina Remaja</p>
+          <p class="text-center text-sm">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus tempora alias velit laboriosam, blanditiis, aliquid
+            voluptates consequatur tenetur dolorum, natus fugiat error
+            cupiditate! Porro nihil tempore reprehenderit, sint itaque quisquam"
+          </p>
+        </div>
+        <div
+          class="bg-secondary w-full h-[350px] flex flex-col items-center justify-center text-white px-5 py-3 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp3.png"
+              alt=""
+              class="w-20 h-20 rounded-full"
+            />
+          </div>
+          <p class="text-xl font-semibold">Richard</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Hidayah</p>
+          <p class="text-center text-sm">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus tempora alias velit laboriosam, blanditiis, aliquid
+            voluptates consequatur tenetur dolorum, natus fugiat error
+            cupiditate! Porro nihil tempore reprehenderit, sint itaque quisquam"
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- apa yang mereka katakan -->
+
+    <!-- footer start -->
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter bg-secondary text-white"
+    >
+      <div class="logo flex items-center gap-3 py-3">
+        <img src="./img/Logo.svg" alt="" class="w-[35px]" />
+        <span class="font-bold text-lg text-white">SebarBuku</span>
+      </div>
+      <p class="text-white">
+        Sebar Buku hadir untuk menjembatani kebaikan, memastikan setiap buku
+        yang didonasikan membuka pintu ilmu bagi mereka yang membutuhkan.
+      </p>
+
+      <div class="flex gap-3 mt-2">
+        <a href="https://instagram.com/">
+          <div class="w-12 h-12 rounded-full bg-white p-3">
+            <img
+              src="./img/icon-footer/whatsapp-128-svgrepo-com.svg  "
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="https://instagram.com/">
+          <div class="w-12 h-12 rounded-full bg-white p-2">
+            <img src="./img/icon-footer/facebook-svgrepo-com.svg" alt="" />
+          </div>
+        </a>
+        <a href="https://instagram.com/">
+          <div class="w-12 h-12 rounded-full bg-white p-2">
+            <img
+              src="./img/icon-footer/instagram-logo-fill-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
+        </a>
+        <a href="https://instagram.com/">
+          <div class="w-12 h-12 rounded-full bg-white p-3">
+            <img src="./img/icon-footer/tiktok-svgrepo-com.svg" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <!--  -->
+      <div class="block mt-4 lg:mt-1 w-full md:w-1/3">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-lg md:text-2xl">Akses</p>
+          <div
+            class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+            onclick="toggleInfo(this)"
+          >
+            <img
+              src="./img/icon-footer/down.svg"
+              alt="Toggle"
+              class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 md:max-h-full md:opacity-100 moreInfo"
+        >
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <!-- Duplikasi elemen -->
+      <div class="block mt-4 lg:mt-1 w-full md:w-1/3">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-lg md:text-2xl">Partner</p>
+          <div
+            class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+            onclick="toggleInfo(this)"
+          >
+            <img
+              src="./img/icon-footer/down.svg"
+              alt="Toggle"
+              class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 md:max-h-full md:opacity-100 moreInfo"
+        >
+          <p>Panti Asuhan Hidayah</p>
+          <p>Panti Asuhan Kebajikan</p>
+          <p>Panti Asuhan Asuhan</p>
+        </div>
+      </div>
+      <div class="block mt-4 lg:mt-1 w-full md:w-1/3">
+        <div class="flex items-center justify-between">
+          <p class="font-bold text-lg md:text-2xl">Kontak</p>
+          <div
+            class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+            onclick="toggleInfo(this)"
+          >
+            <img
+              src="./img/icon-footer/down.svg"
+              alt="Toggle"
+              class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+        <div
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 md:max-h-full md:opacity-100 moreInfo"
+        >
+          <div class="flex gap-3">
+            <img src="./img/icon-footer/phone.svg" alt="">
+            <p>+62 812-4172-0982</p>
+          </div>
+          <div class="flex gap-3">
+            <img src="./img/icon-footer/mail.svg" alt="">
+            <p>sebarbukucomp@gmail.com</p>
+          </div>
+          <div class="flex gap-3">
+            <img src="./img/icon-footer/location.svg" alt="">
+            <p>90 Boulevard, Makassar, Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
