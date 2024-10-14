@@ -72,9 +72,9 @@
                      </p>
                   </div>
                   <div class="flex items-center space-x-2">
-                     <i class="fas fa-book">
-                     </i>
-                     <i class="fas fa-heart">
+                     <i class="fas fa-book book-icon"></i>
+
+                     <i class="fas fa-heart love-icon"></i>
                      </i>
                      <div class="flex items-center border rounded-md">
                         <button class="px-2 decrement">-</button>
@@ -101,9 +101,9 @@
                      </p>
                   </div>
                   <div class="flex items-center space-x-2">
-                     <i class="fas fa-book">
-                     </i>
-                     <i class="fas fa-heart">
+                     <i class="fas fa-book book-icon"></i>
+
+                     <i class="fas fa-heart love-icon"></i>
                      </i>
                      <div class="flex items-center border rounded-md">
                         <button class="px-2 decrement">-</button>
@@ -136,10 +136,9 @@
                      </p>
                   </div>
                   <div class="flex items-center space-x-2">
-                     <i class="fas fa-book">
-                     </i>
-                     <i class="fas fa-heart">
-                     </i>
+                     <i class="fas fa-book book-icon"></i>
+
+                     <i class="fas fa-heart love-icon"></i>
                      <div class="flex items-center border rounded-md">
                         <button class="px-2 decrement">-</button>
                         <input class="w-8 text-center counter" type="text" value="1" readonly/>
@@ -166,10 +165,9 @@
                      </p>
                   </div>
                   <div class="flex items-center space-x-2">
-                     <i class="fas fa-book">
-                     </i>
-                     <i class="fas fa-heart">
-                     </i>
+                     <i class="fas fa-book book-icon"></i>
+
+                     <i class="fas fa-heart love-icon"></i>
                      <div class="flex items-center border rounded-md">
                         <button class="px-2 decrement">-</button>
                         <input class="w-8 text-center counter" type="text" value="1" readonly/>
@@ -187,38 +185,60 @@
       Lihat Detail
     </button>
     <aside
-      id="notification"
-      class="bg-primary text-white p-4 rounded-md fixed right-8 top-48 w-64 hidden"
-    >
-      <div class="flex justify-between items-center">
-        <h3 class="font-bold mb-4">Detail Pengiriman</h3>
+    id="notification"
+    class="bg-primary text-white p-4 rounded-md fixed right-8 top-48 w-64 hidden"
+>
+    <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold">Detail Pengiriman</h3>
         <!-- Close button inside the notification -->
         <button id="close-notif-btn" class="text-white font-bold">X</button>
-      </div>
-      <div class="flex items-center mb-4">
-        <img
-          alt="Pengirim Avatar"
-          class="h-10 rounded-full"
-          height="40"
-          src="https://storage.googleapis.com/a1aa/image/2nclrddLRR7LIBnAhLtTykOLPYW0LdlELqSRBa4mOsTaup5E.jpg"
-          width="40"
-        />
-        <div class="ml-2">
-          <p>Pengirim:</p>
-          <p class="font-bold">Agus Saputra</p>
+    </div>
+
+    <div class="mb-4">
+        <p class="text-base font-semibold">Pengirim:</p>
+        <div class="flex items-center space-x-2"> <!-- Adjusted space-x -->
+            <div class="profil">
+                <img
+                    src="img/profile.png"
+                    alt="Pengirim Avatar"
+                    class="h-12 w-12 rounded-full mt-2 mr-2"
+                />
+            </div>
+            <div class="name flex-1"> <!-- Added flex-1 for spacing -->
+                <p class="text-base font-bold">Agus Saputra</p>
+            </div>
+            <div class="chat-btn">
+                <button class="bg-white text-primary px-2 py-1 rounded-md text-xs hover:bg-opacity-80"> <!-- Adjusted size -->
+                    <i class="fa-solid fa-message"></i> Chat
+                </button>
+            </div>
         </div>
-        <button class="ml-auto bg-white text-blue-900 p-2 rounded-md">Chat</button>
-      </div>
-      <div class="mb-4">
-        <p>Penerima:</p>
-        <p class="font-bold">Panti Asuhan Sinar Murni</p>
-        <p>081385975185</p>
-        <p>Jl. Poros Malino No. 19B Komp Griya</p>
-      </div>
-      <button class="bg-white text-blue-900 p-2 rounded-md w-full">
+    </div>
+
+    <div class="mb-4">
+        <p class="text-base font-semibold">Penerima:</p>
+        <div class="flex items-center space-x-4">
+            <div class="profil">
+                <img
+                    src="img/profile.png"
+                    alt="Penerima Avatar"
+                    class="h-12 w-12 rounded-full"
+                />
+            </div>
+            <div class="name flex-1"> <!-- Added flex-1 for spacing -->
+                <p class="text-base font-bold">Panti Asuhan Sinar Murni</p>
+                <span class="text-sm text-gray-200">08134170999</span>
+            </div>
+        </div>
+        <p class="text-sm text-gray-200">Jl. Poros Malino No. 19B Komp Griya</p>
+    </div>
+
+    <button class="bg-white text-primary px-4 py-2 rounded-md w-full hover:bg-opacity-80">
         Lanjutkan
-      </button>
-    </aside>
+    </button>
+</aside>
+
+
       </body>
       <script>
         const incrementButtons = document.querySelectorAll('.increment');
@@ -257,5 +277,23 @@
         notification.classList.add('hidden');
         toggleNotifBtn.textContent = 'Lihat Detail';
       });
+
+      const loveIcons = document.querySelectorAll('.love-icon');
+
+loveIcons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    icon.classList.toggle('text-red-600'); // Mengubah kelas untuk warna merah
+  });
+});
+
+
+const bookIcons = document.querySelectorAll('.book-icon');
+
+bookIcons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    icon.classList.toggle('text-primary'); // Optional: Reset other color
+  });
+});
+
       </script>
 </html>
