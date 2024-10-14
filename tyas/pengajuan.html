@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../tyas/img/Logo.svg" alt="Logo" class="logo">
+            <span class="logo-name">SebarBuku</span>
+        </div>
+        <div class="search-bar">
+          <i class="srclogo fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search here...">
+          <i class="srclogo fa-solid fa-sliders"></i>
+      </div>
+
+        <button class="lacak" >Lacak Pengiriman</button>
+
+        <div class="action-buttons">
+           
+            <button class="location-btn">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Makassar</p>
+            </button>
+          
+              <button class="chat-btn">
+                <i class="fa-solid fa-message"></i>
+              </button>
+              <button class="notification-btn">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+              <div class="profile">
+                  <img src="../tyas/img/profile.png" alt="Profile" class="profile-pic">
+              </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="detail-container">
+          
+          <div class="left-column">
+            <h2>Pengiriman</h2>
+              <div>
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Jl. Poros Malino No. 19B Komp Griya. Depan Taman Pakui, pagar hijau
+                </span>
+              </div>
+
+              <div class="card-container">
+                <!-- Kolom Gambar -->
+                <div class="image-column">
+                    <img src="../tyas/img/image 13.png" alt="Product Image">
+                </div>
+        
+                <!-- Kolom Teks -->
+                <div class="text-column">
+                    <h3>Buku Informatika</h3>
+                    <p>Berat : 200gr</p>
+                </div>
+        
+                <!-- Kolom Pesanan -->
+                <div class="order-column">
+                    <div class="order-details">
+                        <p>Gratis Biaya Ongkir</p>
+                        <p class="ket">*Tidak di pungut biaya sama sekali</p>
+                    </div>
+                    <div class="order-actions">
+                        <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+                        <div class="quantity">
+                          <button class="minus">−</button>
+                          <span class="number">1</span>
+                          <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-container">
+                <!-- Kolom Gambar -->
+                <div class="image-column">
+                    <img src="../tyas/img/image 13.png" alt="Product Image">
+                </div>
+        
+                <!-- Kolom Teks -->
+                <div class="text-column">
+                    <h3>Buku Informatika</h3>
+                    <p>Berat : 200gr</p>
+                </div>
+        
+                <!-- Kolom Pesanan -->
+                <div class="order-column">
+                    <div class="order-details">
+                        <p>Gratis Biaya Ongkir</p>
+                        <p class="ket">*Tidak di pungut biaya sama sekali</p>
+                    </div>
+                    <div class="order-actions">
+                        <button class="remove-btn"><i class="fa-solid fa-trash"></i></button>
+                        <div class="quantity">
+                          <button class="minus">−</button>
+                          <span class="number">1</span>
+                          <button class="plus">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div>
+                  <select id="Pilih Layanan Pengiriman" class="option-btn">
+                    <option value="option1">Pilih Layanan Pengiriman</option>
+                    <option value="option1">JNT</option>
+                    <option value="option2">JNE</option>
+                    <option value="option3">Pick Up</option>
+                  </select>
+              </div>
+          </div>
+          
+          <div class="right-column">
+            <div class="det-kirim">
+              <h3>Detail Pengiriman</h3>
+              <div>
+                <p>Pengirim:</p>
+                  <div class="sender">
+                      <div class="profil">
+                        <img src="../tyas/img/profile.png" alt="Profile" class="profile-pic">
+                      </div>
+                      <div class="name">
+                        <p>Agus Saputra</p>
+                      </div>
+                      <div class="chat-btn">
+                        <button><i class="fa-solid fa-message"></i>Chat</button>
+                      </div>
+                  </div>
+              </div>
+
+              <div>
+                <p>Penerima:</p>
+                  <div class="sender">
+                      <div class="profil">
+                        <img src="../tyas/img/profile.png" alt="Profile" class="profile-pic">
+                      </div>
+                      <div class="name">
+                        <p>Panti Asuhan Sinar Murni</p>
+                        <span>08134170999</span>
+                      </div>
+                  </div>
+              </div>
+
+              <button class="order">Ajukan Permintaan</button>
+            </div>
+             
+          </div>
+        </div>
+    </div>
+</body>
+</html>
