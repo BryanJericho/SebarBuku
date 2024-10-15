@@ -1,6 +1,11 @@
+// tailwind.config.js
 module.exports = {
   mode: "jit", // Aktifkan JIT mode
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./beranda.html",
+    "./node_modules/flowbite/**/*.js", // Tambahkan ini untuk memastikan Flowbite terdeteksi
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,5 +17,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("flowbite/plugin"), // Tambahkan plugin Flowbite di sini
+  ],
 };
