@@ -1,0 +1,246 @@
+<html>
+   <head>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="src/output.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <header
+   class="container bg-primary max-w-full flex items-center py-6 px-5 justify-between top-0 fixed md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter z-50"
+ >
+   <div class="logo flex items-center gap-3">
+     <img src="./img/Logo.svg" alt="" class="w-[35px]" />
+     <span class="font-bold text-lg text-white">SebarBuku</span>
+   </div>
+
+   <div
+     class="w-11 h-11 bg-purple rounded-xl flex items-center justify-center flex-col min-w-3 md:hidden"
+   >
+     <span class="hamburger-line block w-6 h-1 bg-white mb-1"></span>
+     <span class="hamburger-line block w-6 h-1 bg-white mb-1"></span>
+     <span class="hamburger-line block w-6 h-1 bg-white"></span>
+   </div>
+   <nav
+     class="hidden md:flex items-center justify-center text-white font-inter text-md font-bold"
+   >
+     <ul class="flex gap-10">
+       <li>
+         <a href="#" class="hover:text-indigo-400 whitespace-nowrap"
+           >About Us</a
+         >
+       </li>
+       <li><a href="#" class="hover:text-indigo-400">Contact</a></li>
+       <li><a href="#" class="hover:text-indigo-400">Content</a></li>
+       <li><a href="#" class="hover:text-indigo-400">Member</a></li>
+     </ul>
+   </nav>
+    </header>
+<body class="bg-cover bg-center" style="background-image: url('img/library1.png'); background-size: cover; background-repeat: no-repeat;">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl">
+            <h2 class="text-2xl font-bold mb-6 text-center">Buat Akun Donatur</h2>
+            <form>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nama" class="block font-medium mb-2">Masukkan Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Jeremy..." class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="alamat" class="block font-medium mb-2">Alamat</label>
+                        <input type="text" id="alamat" placeholder="Masukkan alamat ..." class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="email" class="block font-medium mb-2">Email</label>
+                        <input type="email" id="email" placeholder="Jeremy@gmail.com" class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="telepon" class="block font-medium mb-2">No Telepon</label>
+                        <input type="text" id="telepon" placeholder="081..." class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="kecamatan" class="block font-medium mb-2">Kecamatan</label>
+                        <input type="text" id="kecamatan" placeholder="Nama Kecamatan...." class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="kelurahan" class="block font-medium mb-2">Kelurahan</label>
+                        <input type="text" id="kelurahan" placeholder="Nama Kelurahan" class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="rt_rw" class="block font-medium mb-2">RT / RW</label>
+                        <input type="text" id="rt_rw" placeholder="RT / RW..." class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="detail_alamat" class="block font-medium mb-2">Detail Alamat</label>
+                        <input type="text" id="detail_alamat" placeholder="Depan pom bensin...." class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="kata_sandi" class="block font-medium mb-2">Kata Sandi</label>
+                        <input type="password" id="kata_sandi" placeholder="********" class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                    <div>
+                        <label for="ulangi_kata_sandi" class="block font-medium mb-2">Ketik Ulang Kata Sandi</label>
+                        <input type="password" id="ulangi_kata_sandi" placeholder="********" class="w-full border border-gray-300 p-2 rounded">
+                    </div>
+                </div>
+                <div class="mt-6 flex items-center">
+                    <input type="checkbox" id="terms" class="mr-2">
+                    <label for="terms" class="text-sm">Dengan menyetujui <span class="font-bold">S&K</span>, saya memahami bahwa tindakan kecurangan akan mengakibatkan penonaktifan akun secara permanen</label>
+                </div>
+                <div class="mt-6 text-center">
+                    <button type="submit" class="bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 px-4 rounded">Buat Akun</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- footer -->
+<div
+class="mt-[40px] container max-w-full px-5 md:px-12 lg:px-16 font-inter bg-secondary text-white"
+>
+<div class="md:flex md:justify-between md:space-x-6 lg:space-x-8">
+  <!-- Logo dan deskripsi -->
+  <div class="md:w-1/4 mb-8 md:mb-0">
+    <div class="logo flex items-center gap-3 pt-5">
+      <img src="./img/Logo.svg" alt="" class="w-[35px]" />
+      <span class="font-bold text-lg text-white">SebarBuku</span>
+    </div>
+    <p class="text-white mt-2 leading-relaxed">
+      Sebar Buku hadir untuk menjembatani kebaikan, memastikan setiap buku
+      yang didonasikan membuka pintu ilmu bagi mereka yang membutuhkan.
+    </p>
+
+    <!-- Social media icons -->
+    <div class="flex gap-3 mt-4">
+      <a href="https://instagram.com/">
+        <div
+          class="w-12 h-12 rounded-full bg-white p-3 flex items-center justify-center"
+        >
+          <img
+            src="./img/icon-footer/whatsapp-128-svgrepo-com.svg"
+            alt="WhatsApp"
+          />
+        </div>
+      </a>
+      <a href="https://instagram.com/">
+        <div
+          class="w-12 h-12 rounded-full bg-white p-2 flex items-center justify-center"
+        >
+          <img
+            src="./img/icon-footer/facebook-svgrepo-com.svg"
+            alt="Facebook"
+          />
+        </div>
+      </a>
+      <a href="https://instagram.com/">
+        <div
+          class="w-12 h-12 rounded-full bg-white p-2 flex items-center justify-center"
+        >
+          <img
+            src="./img/icon-footer/instagram-logo-fill-svgrepo-com.svg"
+            alt="Instagram"
+          />
+        </div>
+      </a>
+      <a href="https://instagram.com/">
+        <div
+          class="w-12 h-12 rounded-full bg-white p-3 flex items-center justify-center"
+        >
+          <img
+            src="./img/icon-footer/tiktok-svgrepo-com.svg"
+            alt="TikTok"
+          />
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Akses Section -->
+  <div class="block mt-4 lg:mt-1 w-full md:w-1/4">
+    <div class="flex items-center justify-between">
+      <p class="font-bold text-lg md:text-lg mt-5">Akses</p>
+      <div
+        class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+        onclick="toggleInfo(this)"
+      >
+        <img
+          src="./img/icon-footer/down.svg"
+          alt="Toggle"
+          class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+        />
+      </div>
+    </div>
+    <div
+      class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 md:max-h-full md:opacity-100 moreInfo md:text-base mt-2"
+    >
+      <p>Home</p>
+      <p>About</p>
+      <p>Contact Us</p>
+    </div>
+  </div>
+
+  <!-- Partner Section -->
+  <div class="block mt-4 lg:mt-1 w-full md:w-1/4">
+    <div class="flex items-center justify-between">
+      <p class="font-bold text-lg md:text-lg mt-5">Partner</p>
+      <div
+        class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+        onclick="toggleInfo(this)"
+      >
+        <img
+          src="./img/icon-footer/down.svg"
+          alt="Toggle"
+          class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+        />
+      </div>
+    </div>
+    <div
+      class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 md:max-h-full md:opacity-100 moreInfo md:text-base mt-2"
+    >
+      <p>Panti Asuhan Hidayah</p>
+      <p>Panti Asuhan Kebajikan</p>
+      <p>Panti Asuhan Asuhan</p>
+    </div>
+  </div>
+
+  <!-- Kontak Section -->
+  <div class="block mt-4 lg:mt-1 w-full md:w-1/4">
+    <div class="flex items-center justify-between">
+      <p class="font-bold text-lg md:text-lg mt-5">Kontak</p>
+      <div
+        class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+        onclick="toggleInfo(this)"
+      >
+        <img
+          src="./img/icon-footer/down.svg"
+          alt="Toggle"
+          class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+        />
+      </div>
+    </div>
+    <div
+      class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 md:max-h-full md:opacity-100 moreInfo md:text-base mt-2"
+    >
+      <div class="flex gap-3 items-center">
+        <img src="./img/icon-footer/phone.svg" alt="Phone" />
+        <p>+62 812-4172-0982</p>
+      </div>
+      <div class="flex gap-3 items-center mt-2">
+        <img src="./img/icon-footer/mail.svg" alt="Email" />
+        <p>sebarbukucomp@gmail.com</p>
+      </div>
+      <div class="flex gap-3 items-center mt-2">
+        <img src="./img/icon-footer/location.svg" alt="Location" />
+        <p>90 Boulevard, Makassar, Indonesia</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+</html>
