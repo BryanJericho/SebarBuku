@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-inter">
+    <nav
+      class="bg-primary dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-full flex flex-wrap items-center justify-between  px-5 py-4 lg:px-5 lg:max-w-full"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+        <div class="logo flex items-center gap-3">
+      <img src="./img/Logo.svg" alt="" class="w-[35px]" />
+      <span class="font-bold text-lg text-white">SebarBuku</span>
+    </div>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-primary font-bold bg-white  focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Get started
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home start -->
+    <div
+      class="relative mt-[100px] container max-w-full py-6 px-5 justify-between top-0 md:px-12 md:py-8 lg:px-10 lg:py-3 font-inter flex flex-col-reverse md:items-center md:flex-row md:justify-between"
+    >
+      <div class="text mt-8 lg:mt-0">
+        <h1 class="text-primary font-semibold text-2xl mb-1 lg:text-9xl">
+          SebarBuku
+        </h1>
+        <h1 class="text-secondary font-bold text-5xl mb-1 lg:text-7xl">
+          Sebar Impian
+        </h1>
+        <p class="mb-2">Donasi Buku untuk Anak Indonesia</p>
+        <div class="bg-primary px-4 py-3 inline-block rounded-lg">
+          <span class="text-white">Coba sekarang</span>
+        </div>
+      </div>
+      <img
+        src="./img/container-img.svg"
+        alt=""
+        class="max-w-full md:w-1/2 lg:w-1/3"
+      />
+    </div>
+
+    <!-- Home end -->
+
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl md:text-3xl mb-4">
+        Kenapa Pilih <span class="text-[#B9A271]">SebarBuku?</span>
+      </h1>
+      <div
+        class="md:flex md:flex-row-reverse md:gap-4 md:justify-between md:pt-4"
+      >
+        <img
+          src="./img/kenapa-pilih-sebar-buku.png"
+          alt="Kenapa Pilih Sebar Buku"
+          class="rounded-tl-3xl rounded-br-3xl mb-4 md:w-1/2 lg:w-1/4"
+        />
+        <div class="text md:w-1/2">
+          <div class="flex items-center gap-4 text-primary mb-4">
+            <img
+              src="./img/praktis-vector.svg"
+              alt="Proses Donasi Praktis"
+              class="w-[40px] md:w-[32px]"
+            />
+            <div class="flex flex-col gap-0">
+              <p class="font-semibold text-base">Proses Donasi Praktis</p>
+              <p>
+                Sebar Buku menawarkan proses donasi buku yang cepat dan mudah
+                dengan hanya beberapa klik.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 text-primary mb-4">
+            <img
+              src="./img/dampak-nyata-vektor.svg"
+              alt="Dampak Nyata"
+              class="w-[40px] md:w-[32px]"
+            />
+            <div class="flex flex-col gap-0">
+              <p class="font-semibold text-base">Dampak Nyata</p>
+              <p>
+                Sebar Buku memastikan buku donasi sampai ke tangan yang
+                membutuhkan, menciptakan dampak nyata bagi pendidikan.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 text-primary">
+            <img
+              src="./img/trnasparansi-vector.svg"
+              alt="Transparansi"
+              class="w-[40px] md:w-[32px]"
+            />
+            <div class="flex flex-col gap-0">
+              <p class="font-semibold text-base">Transparansi</p>
+              <p>
+                Sebar Buku memberikan transparansi penuh, memungkinkan donatur
+                melacak perjalanan donasi mereka.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div
+      class="mt-[40px] container max-w-full px-5 md:px-12 lg:px-16 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Tentang <span class="text-[#B9A271]">SebarBuku?</span>
+      </h1>
+
+      <!-- Flex untuk medium dan ke atas -->
+      <div class="">
+        <!-- Gambar dengan margin negatif hanya untuk mobile -->
+        <div
+          class="relative bg-[#EAD8B1] px-4 py-4 mb-4 md:px-0 md:w-screen md:left-1/2 md:right-1/2 md:ml-[-50vw]"
+        >
+          <img
+            src="./img/tentang.png"
+            alt="Tentang SebarBuku"
+            class="w-full md:w-3/4 md:mx-auto h-auto"
+          />
+        </div>
+
+        <!-- Text section -->
+        <div class="text">
+          <p class="leading-relaxed">
+            Sebar Buku adalah platform digital yang memfasilitasi donasi buku
+            antara individu dan institusi yang membutuhkan. Dengan tujuan
+            meningkatkan akses literasi dan pendidikan, Sebar Buku menghubungkan
+            para donatur dengan sekolah, perpustakaan, serta lembaga sosial yang
+            kekurangan buku bacaan. Melalui proses yang sederhana dan
+            transparan, Sebar Buku memastikan bahwa setiap buku yang didonasikan
+            dapat membawa manfaat besar bagi mereka yang membutuhkan, sembari
+            membangun semangat berbagi dan peduli di masyarakat.
+          </p>
+
+          <div class="bg-primary px-7 py-3 inline-block rounded-lg mt-4">
+            <span class="text-white">Lihat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galeri start -->
+    <div
+      class="mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Galeri <span class="text-[#B9A271]">SebarBuku</span>
+      </h1>
+      <div
+        class="flex gap-5 overflow-x-scroll md:grid md:grid-cols-3 md:gap-5 md:overflow-visible"
+      >
+        <img
+          src="./img/Galeri/galeri1.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri2.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri3.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri4.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri5.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri6.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri7.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+        <img
+          src="./img/Galeri/galeri8.png"
+          alt=""
+          class="w-full h-auto flex-shrink-0 md:w-auto"
+        />
+      </div>
+    </div>
+    <!-- Galeri End -->
+
+    <!-- Apa yang mereka katakan -->
+    <div
+      class="relative mt-[40px] container max-w-full items-center px-5 justify-between top-0 md:px-12 md:py-8 lg:px-16 lg:py-6 font-inter"
+    >
+      <h1 class="text-center text-primary font-bold text-2xl mb-4">
+        Apa yang <span class="text-[#B9A271]">Mereka Katakan?</span>
+      </h1>
+
+      <!-- Carousel Wrapper -->
+      <div class="flex gap-5 overflow-x-auto scrollbar-hide px-4 md:px-0">
+        <!-- Slide 1 -->
+        <div
+          class="bg-secondary flex-shrink-0 md:max-w-[290px] w-full h-auto flex flex-col items-center justify-center text-white px-6 py-6 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp1.png"
+              alt="Foto Olivia"
+              class="w-20 h-20 rounded-full object-cover"
+            />
+          </div>
+          <p class="text-xl font-semibold mb-1">Olivia</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Bina Ilmu</p>
+          <p class="text-center text-sm leading-relaxed">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus tempora alias velit laboriosam."
+          </p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="bg-secondary flex-shrink-0 md:max-w-[290px] w-full h-auto flex flex-col items-center justify-center text-white px-6 py-6 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp1.png"
+              alt="Foto Olivia"
+              class="w-20 h-20 rounded-full object-cover"
+            />
+          </div>
+          <p class="text-xl font-semibold mb-1">Olivia</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Bina Ilmu</p>
+          <p class="text-center text-sm leading-relaxed">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            nihil tempore reprehenderit."
+          </p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="bg-secondary flex-shrink-0 md:max-w-[290px] w-full h-auto flex flex-col items-center justify-center text-white px-6 py-6 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp1.png"
+              alt="Foto Olivia"
+              class="w-20 h-20 rounded-full object-cover"
+            />
+          </div>
+          <p class="text-xl font-semibold mb-1">Olivia</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Bina Ilmu</p>
+          <p class="text-center text-sm leading-relaxed">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            consequatur tenetur dolorum."
+          </p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div
+          class="bg-secondary flex-shrink-0 md:max-w-[290px] w-full h-auto flex flex-col items-center justify-center text-white px-6 py-6 rounded-tl-3xl rounded-br-3xl"
+        >
+          <div class="foto mb-4">
+            <img
+              src="./img/Galeri/pp1.png"
+              alt="Foto Olivia"
+              class="w-20 h-20 rounded-full object-cover"
+            />
+          </div>
+          <p class="text-xl font-semibold mb-1">Olivia</p>
+          <p class="text-sm mb-3">CEO Panti Asuhan Bina Ilmu</p>
+          <p class="text-center text-sm leading-relaxed">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            consequatur tenetur dolorum."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- apa yang mereka katakan -->
+
+    <!-- footer start -->
+    <div
+      class="mt-[40px] container max-w-full px-5 md:px-12 lg:px-16 font-inter bg-secondary text-white"
+    >
+      <div class="md:flex md:justify-between md:space-x-6 lg:space-x-8">
+        <!-- Logo dan deskripsi -->
+        <div class="md:w-1/4 mb-8 md:mb-0">
+          <div class="logo flex items-center gap-3 pt-5">
+            <img src="./img/Logo.svg" alt="" class="w-[35px]" />
+            <span class="font-bold text-lg text-white">SebarBuku</span>
+          </div>
+          <p class="text-white mt-2 leading-relaxed">
+            Sebar Buku hadir untuk menjembatani kebaikan, memastikan setiap buku
+            yang didonasikan membuka pintu ilmu bagi mereka yang membutuhkan.
+          </p>
+
+          <!-- Social media icons -->
+          <div class="flex gap-3 mt-4">
+            <a href="https://instagram.com/">
+              <div
+                class="w-12 h-12 rounded-full bg-white p-3 flex items-center justify-center"
+              >
+                <img
+                  src="./img/icon-footer/whatsapp-128-svgrepo-com.svg"
+                  alt="WhatsApp"
+                />
+              </div>
+            </a>
+            <a href="https://instagram.com/">
+              <div
+                class="w-12 h-12 rounded-full bg-white p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./img/icon-footer/facebook-svgrepo-com.svg"
+                  alt="Facebook"
+                />
+              </div>
+            </a>
+            <a href="https://instagram.com/">
+              <div
+                class="w-12 h-12 rounded-full bg-white p-2 flex items-center justify-center"
+              >
+                <img
+                  src="./img/icon-footer/instagram-logo-fill-svgrepo-com.svg"
+                  alt="Instagram"
+                />
+              </div>
+            </a>
+            <a href="https://instagram.com/">
+              <div
+                class="w-12 h-12 rounded-full bg-white p-3 flex items-center justify-center"
+              >
+                <img
+                  src="./img/icon-footer/tiktok-svgrepo-com.svg"
+                  alt="TikTok"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Akses Section -->
+        <div class="block mt-4 lg:mt-1 w-full md:w-1/4">
+          <div class="flex items-center justify-between">
+            <p class="font-bold text-lg md:text-lg">Akses</p>
+            <div
+              class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+              onclick="toggleInfo(this)"
+            >
+              <img
+                src="./img/icon-footer/down.svg"
+                alt="Toggle"
+                class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+              />
+            </div>
+          </div>
+          <div
+            class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-1 md:max-h-full md:opacity-10 moreInfo md:text-base mt-2"
+          >
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <!-- Partner Section -->
+        <div class="block mt-4 lg:mt-1 w-full md:w-1/4">
+          <div class="flex items-center justify-between">
+            <p class="font-bold text-lg md:text-lg">Partner</p>
+            <div
+              class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+              onclick="toggleInfo(this)"
+            >
+              <img
+                src="./img/icon-footer/down.svg"
+                alt="Toggle"
+                class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+              />
+            </div>
+          </div>
+          <div
+            class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-1 md:max-h-full md:opacity-100 moreInfo md:text-base mt-2"
+          >
+            <p>Panti Asuhan Hidayah</p>
+            <p>Panti Asuhan Kebajikan</p>
+            <p>Panti Asuhan Asuhan</p>
+          </div>
+        </div>
+
+        <!-- Kontak Section -->
+        <div class="block mt-4 lg:mt-1 w-full md:w-1/4">
+          <div class="flex items-center justify-between">
+            <p class="font-bold text-lg md:text-lg">Kontak</p>
+            <div
+              class="w-[35px] h-[35px] border-[3px] border-white rounded-full flex items-center justify-center cursor-pointer md:hidden toggleArrow"
+              onclick="toggleInfo(this)"
+            >
+              <img
+                src="./img/icon-footer/down.svg"
+                alt="Toggle"
+                class="w-4 h-4 arrowIcon transition-transform duration-300 ease-in-out"
+              />
+            </div>
+          </div>
+          <div
+            class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-1 md:max-h-full md:opacity-100 moreInfo md:text-base mt-2"
+          >
+            <div class="flex gap-3 items-center">
+              <img src="./img/icon-footer/phone.svg" alt="Phone" />
+              <p>+62 812-4172-0982</p>
+            </div>
+            <div class="flex gap-3 items-center mt-2">
+              <img src="./img/icon-footer/mail.svg" alt="Email" />
+              <p>sebarbukucomp@gmail.com</p>
+            </div>
+            <div class="flex gap-3 items-center mt-2">
+              <img src="./img/icon-footer/location.svg" alt="Location" />
+              <p>90 Boulevard, Makassar, Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
